@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "c788a7a7a52e13de",
+    "id": "d0398ff40dfe70bc",
     "type": "split",
     "children": [
       {
-        "id": "ddd7c29327f8be47",
+        "id": "a55b3d0cd8e3704d",
         "type": "tabs",
         "children": [
           {
-            "id": "6d12cbf54c1b900b",
+            "id": "ef734380bd64947e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "X-NODE/Testing.md",
+                "file": "Testing.md",
                 "mode": "source",
                 "source": false
               },
@@ -27,11 +27,11 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "a2cf4e0a3e30d25e",
+    "id": "1ef41587af3f521c",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "5456cb6e12fcff23",
+        "id": "21039d81c919d6b5",
         "type": "leaf",
         "state": {
           "type": "file-explorer",
@@ -44,7 +44,7 @@
         }
       },
       {
-        "id": "4dacdd7b4fea68f4",
+        "id": "c22249447a6d5581",
         "type": "leaf",
         "state": {
           "type": "search",
@@ -61,7 +61,7 @@
         }
       },
       {
-        "id": "cd16716f0ea11044",
+        "id": "2f011fc5ed170f99",
         "type": "leaf",
         "state": {
           "type": "tag",
@@ -76,7 +76,7 @@
         }
       },
       {
-        "id": "d4b32958588b1c25",
+        "id": "66925498f110c58f",
         "type": "leaf",
         "state": {
           "type": "all-properties",
@@ -90,7 +90,7 @@
         }
       },
       {
-        "id": "14cedffeda8018b9",
+        "id": "28249a515ecac4a2",
         "type": "leaf",
         "state": {
           "type": "bookmarks",
@@ -103,15 +103,16 @@
     "currentTab": 0
   },
   "right": {
-    "id": "889f62f80411545f",
+    "id": "560e4231bb557f54",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "3be593c8bfdfce48",
+        "id": "dd0183fd178a59dd",
         "type": "leaf",
         "state": {
           "type": "backlink",
           "state": {
+            "file": "Testing.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -125,11 +126,12 @@
         }
       },
       {
-        "id": "cbde205e0c55732c",
+        "id": "cda16fdbd8cf7365",
         "type": "leaf",
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "Testing.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -138,11 +140,12 @@
         }
       },
       {
-        "id": "56204a6f4519f588",
+        "id": "a2791f60b5fc4981",
         "type": "leaf",
         "state": {
           "type": "outline",
           "state": {
+            "file": "Testing.md",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -152,7 +155,7 @@
         }
       },
       {
-        "id": "fa43add77dc2bce4",
+        "id": "cb1951d636b08f54",
         "type": "leaf",
         "state": {
           "type": "git-view",
@@ -176,9 +179,6 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6d12cbf54c1b900b",
-  "lastOpenFiles": [
-    "Testing.md",
-    "README.md"
-  ]
+  "active": "ef734380bd64947e",
+  "lastOpenFiles": []
 }
