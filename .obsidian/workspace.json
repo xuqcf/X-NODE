@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Useful Python Rules (OOP).md",
+                "file": "Python (functional Programming).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Useful Python Rules (OOP)"
+              "title": "Python (functional Programming)"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Useful Python Rules (OOP).md",
+                "file": "Python (functional Programming).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Useful Python Rules (OOP)"
+              "title": "Backlinks for Python (functional Programming)"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Useful Python Rules (OOP).md",
+                "file": "Python (functional Programming).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Useful Python Rules (OOP)"
+              "title": "Outgoing links from Python (functional Programming)"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Useful Python Rules (OOP).md",
+                "file": "Python (functional Programming).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Useful Python Rules (OOP)"
+              "title": "Outline of Python (functional Programming)"
             }
           },
           {
@@ -196,8 +196,10 @@
   },
   "active": "3d811ecb26799717",
   "lastOpenFiles": [
-    "Testing.md",
+    "Python Rules (FP).md",
     "Useful Python Rules (OOP).md",
+    "Python (functional Programming).md",
+    "Testing.md",
     "conflict-files-obsidian-git.md",
     "X-NODE/Testing.md",
     "X-NODE/README.md",
