@@ -60,3 +60,92 @@
         
 
 ---
+
+## Python `argparse` & Command-Line Arguments
+
+- **Purpose**: Allow scripts to accept input from the command line. Useful for dynamic prompts or configs.
+    
+
+### Basic Usage
+
+```python
+import argparse
+
+parser = argparse.ArgumentParser(description="Description of your script")
+parser.add_argument("arg_name", type=str, help="Help text for this argument")
+args = parser.parse_args()
+```
+
+- `ArgumentParser(description=...)` → creates the parser
+    
+- `add_argument(...)` → defines an argument:
+    
+    - `"arg_name"` → positional argument (required)
+        
+    - `type=...` → expected data type
+        
+    - `help=...` → description shown in auto help message
+        
+- `args = parser.parse_args()` → parses arguments passed via CLI
+    
+- Access argument: `args.arg_name`
+    
+
+### Features
+
+- Positional arguments → **required by default**
+    
+- Optional arguments → use `--flag` or `-f`
+    
+- Missing required arguments → prints error and exits with code 2 automatically
+    
+- `args` object can hold multiple arguments
+    
+
+### Example with Gemini API
+
+```python
+import argparse
+from google import genai
+
+parser = argparse.ArgumentParser(description="Chatbot")
+parser.add_argument("user_prompt", type=str, help="User prompt")
+args = parser.parse_args()
+
+prompt = args.user_prompt
+response = client.models.generate_content(
+    model='gemini-2.5-flash',
+    contents=prompt
+)
+```
+
+- `args.user_prompt` → gets the user-entered prompt string
+    
+- Use the string as `contents` for API calls
+    
+- Works like:
+    
+
+```bash
+python main.py "how was burj khalifa built?"
+```
+
+### Tips
+
+- Always store the prompt in a variable → easy to print, reuse, or log
+    
+- Optional arguments example:
+    
+
+```python
+parser.add_argument("--model", type=str, default="gemini-2.5-flash", help="Model name")
+```
+
+- Access via `args.model`
+    
+
+---
+
+I can also make a **super-short flashcard version** for memorizing `argparse` essentials in 3–4 lines if you want.
+
+Do you want me to make that too?
