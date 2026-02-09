@@ -142,6 +142,78 @@ parser.add_argument("--model", type=str, default="gemini-2.5-flash", help="Model
 ```
 
 - Access via `args.model`
+---
+
+### 2️ Add Arguments
+
+#### Positional Argument (required)
+
+```python
+parser.add_argument("user_prompt", type=str, help="User prompt")
+```
+
+- Required by default
+    
+- Access in code: `args.user_prompt`
+    
+
+#### Optional Flag (boolean)
+
+```python
+parser.add_argument("--verbose", action="store_true", help="Enable verbose output")
+```
+
+- `--verbose` → CLI flag
+    
+- `action="store_true"` → `True` if flag present, `False` if absent
+    
+- Access in code: `args.verbose`
+    
+- You can name it anything using `dest=`:
+    
+
+```python
+parser.add_argument("--verbose", dest="show_metadata", action="store_true")
+# Access with args.show_metadata
+```
+
+---
+
+ Using Arguments in Code
+
+```python
+if args.verbose:
+    print(f"User prompt: {args.user_prompt}")
+    # Print metadata, tokens, etc.
+else:
+    print("Response only")
+```
+
+- Use **optional args in if statements** to toggle behavior
+    
+- Positional arguments can be used directly as variables
+    
+
+---
+
+###  Example CLI Usage
+
+```bash
+python main.py "Hello world" --verbose   # args.verbose = True
+python main.py "Hello world"             # args.verbose = False
+```
+
+---
+
+### Key Points
+
+- Positional → required, accessed via `args.<name>`
+    
+- Optional (`--flag`) → use `action="store_true"` for booleans
+    
+- `dest=` can override attribute name in `args`
+    
+- Always check optional flags with `if args.flag:`
     
 
 ---
