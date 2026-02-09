@@ -761,6 +761,81 @@ new_data = dict(
 
 ---
 
+## `map`, `str`, and `list`
+
+### `str()`
+
+- Built-in function that **converts a value into a string**
+    
+- Works on almost anything
+    
+
+```python
+str(5)      # "5"
+str(True)   # "True"
+str(None)   # "None"
+```
+
+---
+
+### `map(function, iterable)`
+
+- Applies a function to **every item** in an iterable
+    
+- **Does not return a list**
+    
+- Returns a **map object (iterator)**
+    
+
+```python
+map(str, [1, 2, 3])   # <map object>
+```
+
+---
+
+### `list()`
+
+- Converts an iterable (like `map`) into a **real list**
+    
+- Forces evaluation
+    
+
+```python
+list(map(str, [1, 2, 3]))   # ["1", "2", "3"]
+```
+
+---
+
+### Nested `map`
+
+- One `map` for rows
+    
+- One `map` for items inside each row
+    
+- Each `map` must be wrapped in `list()`
+    
+
+```python
+list(
+    map(
+        lambda row: list(map(str, row)),
+        data
+    )
+)
+```
+
+---
+
+### Key rule
+
+- **Every `map` you want to use like a list must be wrapped in `list()`**
+    
+
+---
+
+If you want, I can also compress this into a **one-screen cheat sheet** or rewrite it in the exact style of your other FP notes.
+---
+
 ## Lambda Functions
 
 - A **lambda** is a small, one-line function
