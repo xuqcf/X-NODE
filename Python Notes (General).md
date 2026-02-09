@@ -37,3 +37,26 @@
     
 
 ---
+
+### Token Usage in Gemini API
+
+- Most APIs return **metadata** about token usage to help monitor consumption and avoid rate limits.
+    
+- The `GenerateContentResponse` object has a `usage_metadata` property.
+    
+- `usage_metadata` includes:
+    
+    - **`prompt_token_count`** → number of tokens in your **prompt**
+        
+        ```python
+        response.usage_metadata.prompt_token_count
+        ```
+        
+    - **`candidates_token_count`** → number of tokens in the **model’s response**
+        
+        ```python
+        response.usage_metadata.candidates_token_count
+        ```
+        
+
+---
