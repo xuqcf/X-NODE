@@ -32,7 +32,6 @@
         
 - **`response.text`** → gets the generated text from the response.
     
-- **Quotes in prompt** → just use `"..."`, no extra quotes inside string.
     
 - **Best practice** → put API calls inside `main()` or functions for clean code.
     
