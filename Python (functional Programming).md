@@ -1482,6 +1482,165 @@ From a functional programming mindset, that’s bad because:
 - You have to know hidden behavior (exceptions) to use it safely
 
 ---
+
+## `match / case` (Python)
+
+### What it is
+
+- `match` is Python’s **pattern matching** statement
+    
+- Used to choose **one code path** based on a value
+    
+- Similar to `switch` in other languages
+    
+
+---
+
+### Basic structure
+
+```python
+match value:
+    case pattern1:
+        do_something()
+    case pattern2:
+        do_something_else()
+    case _:
+        fallback()
+```
+
+- `value` is matched **top to bottom**
+    
+- First matching `case` runs
+    
+- `_` means **anything else**
+    
+
+---
+
+### Matching Enums
+
+```python
+match status:
+    case CSVExportStatus.PENDING:
+        ...
+    case CSVExportStatus.SUCCESS:
+        ...
+```
+
+- Enum cases must use **EnumName.VALUE**
+    
+- Strings and Enums are **not the same**
+    
+
+Wrong:
+
+```python
+case "PENDING":
+```
+
+Correct:
+
+```python
+case CSVExportStatus.PENDING:
+```
+
+---
+
+### Important rules
+
+- No `break` needed
+    
+- Only **one case** runs
+    
+- `_` should usually be **last**
+    
+
+---
+
+## Handling Errors Properly
+
+### When to raise an error
+
+- Use errors for **invalid states**
+    
+- Not for normal program flow
+    
+
+Example:
+
+```python
+case _:
+    raise Exception("unknown export status")
+```
+
+---
+
+### `raise`
+
+- Stops execution immediately
+    
+- Sends an error up the call stack
+    
+
+```python
+raise Exception("something went wrong")
+```
+
+---
+
+### Why not return errors as strings?
+
+- Errors should be **loud**
+    
+- Forces the caller to handle the problem
+    
+- Prevents silent bugs
+    
+
+Bad:
+
+```python
+return "error"
+```
+
+Good:
+
+```python
+raise Exception("error")
+```
+
+---
+
+## Pattern used in real code
+
+```python
+match state:
+    case VALID:
+        handle_valid()
+    case INVALID:
+        handle_invalid()
+    case _:
+        raise Exception("invalid state")
+```
+
+---
+
+## Key mental model
+
+> `match` selects behavior  
+> `raise` rejects invalid situations
+
+---
+
+If you want, I can add:
+
+- examples of `try / except`
+    
+- custom exception classes
+    
+- when **not** to use exceptions
+
+---
 ### Summary mindset
 
 
