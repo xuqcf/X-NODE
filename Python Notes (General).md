@@ -146,6 +146,59 @@ parser.add_argument("--model", type=str, default="gemini-2.5-flash", help="Model
 
 ---
 
-I can also make a **super-short flashcard version** for memorizing `argparse` essentials in 3–4 lines if you want.
+## Gemini API: `types` & Messages
 
-Do you want me to make that too?
+- **`types` module** → provides **data classes** for structured API requests.
+    
+    - Example: `from google.genai import types`
+        
+
+### Core classes
+
+- **`types.Content`** → represents a **single message**
+    
+    - Properties:
+        
+        - `role` → `"user"`, `"assistant"`, `"system"`
+            
+        - `parts` → list of `Part` objects (text pieces)
+            
+- **`types.Part`** → represents a **text snippet** inside a message
+    
+    - Property: `text` → the actual message string
+        
+
+### How to create messages
+
+```python
+messages = [types.Content(role="user", parts=[types.Part(text=args.user_prompt)])]
+```
+
+- `messages` → list of `Content` objects representing a **conversation**
+    
+- Each `Content` object can have multiple `Part`s
+    
+- Later, append assistant or system messages to `messages` for multi-turn context
+    
+
+### Sending messages to Gemini
+
+```python
+response = client.models.generate_content(model="gemini-2.5-flash", contents=messages)
+```
+
+- Gemini reads the **list of `Content` objects** and generates a response based on conversation context
+    
+
+### Notes / Best Practices
+
+- Always store the user prompt in a variable → easy to print/log
+    
+- Each message must have a role (`user` / `assistant` / `system`)
+    
+- Use multiple `Content` objects in `messages` for **multi-turn conversations**
+    
+- `Part` allows multiple pieces of text per message, though usually just one
+    
+
+---
