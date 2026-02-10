@@ -256,7 +256,7 @@ messages = [types.Content(role="user", parts=[types.Part(text=args.user_prompt)]
 ### Sending messages to Gemini
 
 ```python
-response = client.models.generate_content(model="gemini-2.5-flash", contents=messages)
+response = client.models.generate_content(model="gemini-2.5-flash", contents=messages)1
 ```
 
 - Gemini reads the **list of `Content` objects** and generates a response based on conversation context
