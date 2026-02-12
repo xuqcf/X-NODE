@@ -274,3 +274,411 @@ response = client.models.generate_content(model="gemini-2.5-flash", contents=mes
     
 
 ---
+
+# Get Files — Secure Directory Listing (LLM Tool)
+
+## What this lesson is about
+
+We’re giving our AI agent its **first real ability**:  
+👉 **looking at files on the system**
+
+But we do this **carefully**.
+
+The agent:
+
+- can list files in a directory
+    
+- can see file names and sizes
+    
+- can tell files vs folders
+    
+- **cannot** look outside a directory we choose
+    
+
+Since LLMs only work with **text**, this function must:
+
+- take a directory path
+    
+- return a **string** describing the contents
+    
+- never crash — always return text, even on errors
+    
+
+---
+
+## Project structure
+
+```
+project_root/
+├── calculator/
+│   ├── main.py
+│   ├── pkg/
+│   │   ├── calculator.py
+│   │   └── render.py
+│   └── tests.py
+└── functions/
+    └── get_files_info.py
+```
+
+- `calculator/` → **working directory** (allowed area)
+    
+- `functions/` → where we store LLM tools
+    
+- `get_files_info.py` → tool that lists files
+    
+
+---
+
+## The core idea (important)
+
+- The **LLM chooses** the directory it wants to inspect
+    
+- **We choose** the working directory
+    
+- The LLM can **only see inside** the working directory
+    
+
+This prevents:
+
+- reading system files
+    
+- leaking secrets
+    
+- deleting or overwriting random files
+    
+
+This pattern will be reused for **every tool** we give the agent.
+
+---
+
+## Function signature
+
+```python
+def get_files_info(working_directory, directory="."):
+```
+
+- `working_directory`  
+    The root folder we allow access to (e.g. `"calculator"`)
+    
+- `directory`  
+    A **relative path** inside `working_directory`
+    
+    - `"."` → current directory
+        
+    - `"pkg"` → subfolder
+        
+    - `"../"` → ❌ blocked
+        
+
+---
+
+## Step 1 — Convert working directory to absolute path
+
+```python
+working_dir_abs = os.path.abspath(working_directory)
+```
+
+Why:
+
+- Relative paths depend on where the script runs
+    
+- Absolute paths are stable and safe to compare
+    
+
+Example:
+
+```
+"calculator"
+→ "/home/user/ai-agent-project/calculator"
+```
+
+---
+
+## Step 2 — Build the target directory path
+
+```python
+target_dir = os.path.normpath(
+    os.path.join(working_dir_abs, directory)
+)
+```
+
+What’s happening here:
+
+- `os.path.join()`  
+    Safely combines paths (handles slashes correctly)
+    
+- `os.path.normpath()`  
+    Cleans the path:
+    
+    - removes `..`
+        
+    - removes `.`
+        
+    - simplifies weird paths
+        
+
+This protects against path tricks like `"../../etc"`
+
+---
+
+## Step 3 — Validate directory is inside working directory
+
+```python
+valid_target_dir = (
+    os.path.commonpath([working_dir_abs, target_dir])
+    == working_dir_abs
+)
+```
+
+Plain English:
+
+> “Does the target directory live **inside** the working directory?”
+
+Why this matters:
+
+- Prevents directory escape
+    
+- Stops the LLM from accessing `/bin`, `/etc`, or home directories
+    
+
+If invalid:
+
+```python
+return f'Error: Cannot list "{directory}" as it is outside the permitted working directory'
+```
+
+---
+
+## Step 4 — Ensure the path is actually a directory
+
+```python
+if not os.path.isdir(target_dir):
+    return f'Error: "{directory}" is not a directory'
+```
+
+Handles cases like:
+
+- file instead of folder
+    
+- directory doesn’t exist
+    
+
+Again: return a **string**, never crash.
+
+---
+
+## Step 5 — Iterate over files in the directory
+
+```python
+for item in os.listdir(target_dir):
+```
+
+- `os.listdir()` returns file/folder names
+    
+- These are **not full paths**
+    
+
+So we build full paths:
+
+```python
+item_path = os.path.join(target_dir, item)
+```
+
+---
+
+## Step 6 — Collect metadata for each item
+
+```python
+size = os.path.getsize(item_path)
+is_dir = os.path.isdir(item_path)
+```
+
+We record:
+
+- file/folder name
+    
+- size in bytes
+    
+- whether it’s a directory
+    
+
+---
+
+## Step 7 — Build output as text
+
+```python
+lines.append(
+    f"- {item}: file_size={size} bytes, is_dir={is_dir}"
+)
+```
+
+Example output:
+
+```
+- main.py: file_size=719 bytes, is_dir=False
+- pkg: file_size=44 bytes, is_dir=True
+```
+
+Join everything into one string:
+
+```python
+return "\n".join(lines)
+```
+
+---
+
+## Step 8 — Error handling (very important)
+
+All tool functions must **always return a string**.
+
+So we wrap everything in:
+
+```python
+try:
+    ...
+except (OSError, ValueError) as e:
+    return f"Error: {e}"
+```
+
+This ensures:
+
+- no crashes
+    
+- LLM receives readable error messages
+    
+- agent can react intelligently
+    
+
+---
+
+## Full function (reference)
+
+```python
+import os
+
+def get_files_info(working_directory, directory="."):
+    try:
+        working_dir_abs = os.path.abspath(working_directory)
+        target_dir = os.path.abspath(
+            os.path.normpath(
+                os.path.join(working_dir_abs, directory)
+            )
+        )
+
+        if os.path.commonpath([working_dir_abs, target_dir]) != working_dir_abs:
+            return f'Error: Cannot list "{directory}" as it is outside the permitted working directory'
+
+        if not os.path.isdir(target_dir):
+            return f'Error: "{directory}" is not a directory'
+
+        lines = []
+
+        for item in os.listdir(target_dir):
+            item_path = os.path.join(target_dir, item)
+            size = os.path.getsize(item_path)
+            is_dir = os.path.isdir(item_path)
+
+            lines.append(
+                f"- {item}: file_size={size} bytes, is_dir={is_dir}"
+            )
+
+        return "\n".join(lines)
+
+    except (OSError, ValueError) as e:
+        return f"Error: {e}"
+```
+
+---
+
+## Manual testing (debugging)
+
+Create `test_get_files_info.py` in project root.
+
+```python
+from functions.get_files_info import get_files_info
+
+def main():
+    print("Result for current directory:")
+    print(get_files_info("calculator", "."))
+    print()
+
+    print("Result for 'pkg' directory:")
+    print(get_files_info("calculator", "pkg"))
+    print()
+
+    print("Result for '/bin' directory:")
+    print(get_files_info("calculator", "/bin"))
+    print()
+
+    print("Result for '../' directory:")
+    print(get_files_info("calculator", "../"))
+
+if __name__ == "__main__":
+    main()
+```
+
+Run:
+
+```bash
+uv run test_get_files_info.py
+```
+
+---
+
+## Expected behavior (not exact sizes)
+
+### Valid paths
+
+- Lists files
+    
+- Shows size + directory status
+    
+
+### Invalid paths
+
+- `/bin` → ❌ blocked
+    
+- `../` → ❌ blocked
+    
+
+Always returns a **string**, never crashes.
+
+---
+
+## Useful functions (plain English)
+
+- `os.path.abspath()` → get full path
+    
+- `os.path.join()` → combine paths safely
+    
+- `os.path.normpath()` → clean paths (`..`, `.`)
+    
+- `os.path.commonpath()` → check directory containment
+    
+- `os.listdir()` → list directory contents
+    
+- `os.path.isdir()` → is this a folder?
+    
+- `os.path.isfile()` → is this a file?
+    
+- `os.path.getsize()` → size in bytes
+    
+- `"\n".join()` → turn list of lines into one string
+    
+
+---
+
+## Key takeaways
+
+- LLM tools must be **restricted**
+    
+- Always validate paths
+    
+- Always return strings
+    
+- Never trust user/LLM input
+    
+- This pattern applies to **every future tool**
+    
+
+---
