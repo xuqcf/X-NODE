@@ -179,7 +179,7 @@ parser.add_argument("--verbose", dest="show_metadata", action="store_true")
 
 ---
 
- Using Arguments in Code
+ Using Arguments in Cod
 
 ```python
 if args.verbose:
