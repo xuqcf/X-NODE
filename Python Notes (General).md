@@ -653,7 +653,7 @@ Always returns a **string**, never crashes.
     
 - `os.path.normpath()` → clean paths (`..`, `.`)
     
-- `os.path.commonpath()` → check directory containment
+- `os.path.commonpath()` → check directory containment / get the common sub-path shared by multiple paths
     
 - `os.listdir()` → list directory contents
     
