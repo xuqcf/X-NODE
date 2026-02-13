@@ -1,4 +1,4 @@
-# Functional Programming & Python Notes 
+
 
 ---
 

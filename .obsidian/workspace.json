@@ -42,12 +42,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI Agent in Python Project Notes - SIMPLIFIED.md",
+                "file": "Function Programming Notes - Python.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI Agent in Python Project Notes - SIMPLIFIED"
+              "title": "Function Programming Notes - Python"
             }
           }
         ],
@@ -64,13 +64,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI Agent in Python Project Notes - SIMPLIFIED.md",
+                "file": "Function Programming Notes - Python.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of AI Agent in Python Project Notes - SIMPLIFIED"
+              "title": "Outline of Function Programming Notes - Python"
             }
           }
         ]
@@ -248,16 +248,16 @@
   },
   "active": "35e09bf6aff628a1",
   "lastOpenFiles": [
-    "AI Agent in Python Project Notes.md",
-    "AI Agent in Python Project Notes - SIMPLIFIED.md",
-    "Python Function Programming Notes.md",
-    "Useful Python Rules (OOP).md",
     "Python Rules (FP).md",
-    "Untitled.md",
-    "Untitled 1.base",
-    "Testing.md",
-    "Untitled.base",
+    "Function Programming Notes - Python.md",
     "README.md",
+    "Testing.md",
+    "Untitled.md",
+    "AI Agent in Python Project Notes - SIMPLIFIED.md",
+    "Untitled.base",
+    "Untitled 1.base",
+    "AI Agent in Python Project Notes.md",
+    "Useful Python Rules (OOP).md",
     "conflict-files-obsidian-git.md",
     "X-NODE/Testing.md",
     "X-NODE/README.md",
