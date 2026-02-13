@@ -42,12 +42,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI Agent in Python Project Notes - SIMPLIFIED.md",
+                "file": "Function Programming Notes - Python.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI Agent in Python Project Notes - SIMPLIFIED"
+              "title": "Function Programming Notes - Python"
             }
           }
         ],
@@ -64,13 +64,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI Agent in Python Project Notes - SIMPLIFIED.md",
+                "file": "Function Programming Notes - Python.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of AI Agent in Python Project Notes - SIMPLIFIED"
+              "title": "Outline of Function Programming Notes - Python"
             }
           }
         ]
@@ -248,12 +248,13 @@
   },
   "active": "35e09bf6aff628a1",
   "lastOpenFiles": [
-    "Function Programming Notes - Python.md",
     "AI Agent in Python Project Notes - SIMPLIFIED.md",
     "AI Agent in Python Project Notes.md",
+    "Untitled.canvas",
+    "README.md",
+    "Function Programming Notes - Python.md",
     "Useful Python Rules (OOP).md",
     "Python Rules (FP).md",
-    "README.md",
     "Testing.md",
     "Untitled.md",
     "Untitled.base",
