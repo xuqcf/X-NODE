@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Testing.md",
+                "file": "Python (functional Programming).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Testing"
+              "title": "Python (functional Programming)"
             }
           }
         ]
@@ -112,7 +112,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Testing.md",
+            "file": "Python (functional Programming).md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Testing.md",
+            "file": "Python (functional Programming).md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -145,7 +145,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Testing.md",
+            "file": "Python (functional Programming).md",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -180,5 +180,19 @@
     }
   },
   "active": "ef734380bd64947e",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "/Function Programming Notes - Python.md",
+    "/AI Agent in Python Project Notes.md",
+    "/AI Agent in Python Project Notes - SIMPLIFIED.md",
+    "2026-02-09.md",
+    "Python (functional Programming).md",
+    "currying.md",
+    "Python Rules (FP).md",
+    "Useful Python Rules (OOP).md",
+    "/Python Rules (FP).md",
+    "/Python (functional Programming).md",
+    "Testing.md",
+    "/Useful Python Rules (OOP).md",
+    "/Testing.md"
+  ]
 }
