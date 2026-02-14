@@ -17,7 +17,7 @@
     - Empty dict → `False`
         
     - Non‑empty dict → `True`
-        
+    
 
 ---
 
