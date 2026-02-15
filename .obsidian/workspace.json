@@ -54,13 +54,16 @@
             "id": "a13a382f0b03c0e9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
+                "file": "Untitled.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
+              "icon": "lucide-layout-dashboard",
               "title": "Untitled"
             }
           }
@@ -260,14 +263,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a13a382f0b03c0e9",
+  "active": "b6fd589e88334e6d",
   "lastOpenFiles": [
-    "Function Programming Notes - Python.md",
-    "Untitled.md",
-    "AI Agent in Python Project Notes - SIMPLIFIED.md",
-    "AI Agent in Python Project Notes.md",
     "Untitled.canvas",
     "README.md",
+    "Untitled.md",
+    "Function Programming Notes - Python.md",
+    "AI Agent in Python Project Notes - SIMPLIFIED.md",
+    "AI Agent in Python Project Notes.md",
     "Useful Python Rules (OOP).md",
     "Python Rules (FP).md",
     "Testing.md",
