@@ -81,7 +81,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md",
+                "file": "Untitled.canvas",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -263,11 +263,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b6fd589e88334e6d",
+  "active": "0e52b70d0c17998f",
   "lastOpenFiles": [
+    "Untitled.md",
     "Untitled.canvas",
     "README.md",
-    "Untitled.md",
     "Function Programming Notes - Python.md",
     "AI Agent in Python Project Notes - SIMPLIFIED.md",
     "AI Agent in Python Project Notes.md",
