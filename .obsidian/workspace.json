@@ -80,9 +80,21 @@
               "icon": "lucide-file",
               "title": "Gym"
             }
+          },
+          {
+            "id": "84eb61889f8a3829",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.4"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       },
       {
         "id": "2a15efa8229b721f",
@@ -95,13 +107,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Gym.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Gym"
+              "title": "Outline"
             }
           }
         ]
@@ -277,7 +288,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9c780ad7b0b2b4f2",
+  "active": "84eb61889f8a3829",
   "lastOpenFiles": [
     "Untitled.canvas",
     "Gym.md",
