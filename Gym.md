@@ -67,7 +67,7 @@
 
 ### 🟢 LEGS (Wed / Sun)
 **Wednesday (Quads/Anterior Focus)**
-- [ ] **Barbell Back Squat:** 3 x 8
+- [x] **Barbell Back Squat:** 3 x 8
 - [ ] **Leg Press:** 3 x 12 (Feet low on plate)
 - [ ] **Leg Extensions (sissy squats):** 4 x 15
 - [ ] **Seated Calf Raises(with dumbbells ):** 4 x 20
@@ -101,7 +101,7 @@
 | Mar 2      | Mon         | Push A              |                  |          | [ ] |     [ ]     |   [ ]   |   [ ]   | Day 1 - Take it easy       |
 | Mar 3      | Tue         | Pull A              |                  |   [ ]    | [ ] |     [ ]     |   [ ]   |   [ ]   |                            |
 | Mar 4      | Wed         | Legs A              |                  |   [ ]    | [ ] |     [ ]     |   [ ]   |   [ ]   |                            |
-| Mar 5      | Thu         | Push B              |                  |   [ ]    | [ ] |     [ ]     |   [ ]   |   [ ]   |                            |
+| Mar 5      | Thu         | Push B              |                  |    Y     | [ ] |     [ ]     |    Y    |    Y    |                            |
 | Mar 6      | Fri         | Pull B              |                  |   [ ]    | [ ] |     [ ]     |   [ ]   |   [ ]   |                            |
 | Mar 7      | Sat         | **REST**            | --               |   [ ]    | [ ] |     [ ]     |   [ ]   |   --    | Focus on stretching        |
 | Mar 8      | Sun         | Legs B              |                  |   [ ]    | [ ] |     [ ]     |   [ ]   |   [ ]   |                            |
