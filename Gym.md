@@ -68,7 +68,7 @@
 ### 🟢 LEGS (Wed / Sun)
 **Wednesday (Quads/Anterior Focus)**
 - [x] **Barbell Back Squat:** 3 x 8
-- [ ] **Leg Press:** 3 x 12 (Feet low on plate)
+- [x] **Leg Press:** 3 x 12 (Feet low on plate)
 - [ ] **Leg Extensions (sissy squats):** 4 x 15
 - [ ] **Seated Calf Raises(with dumbbells ):** 4 x 20
 - [ ] **Stamina:** 5m Stairmaster (Slow/Deep steps)
