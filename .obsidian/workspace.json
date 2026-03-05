@@ -85,12 +85,14 @@
             "id": "84eb61889f8a3829",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.12.4"
+                "file": "Gym.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.4"
+              "icon": "lucide-file",
+              "title": "Gym"
             }
           }
         ],
@@ -107,12 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Gym.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Gym"
             }
           }
         ]
@@ -290,11 +293,11 @@
   },
   "active": "84eb61889f8a3829",
   "lastOpenFiles": [
+    "Useful Python Rules (OOP).md",
     "Untitled.canvas",
     "Gym.md",
     "AI Agent in Python Project Notes - SIMPLIFIED.md",
     "README.md",
-    "Useful Python Rules (OOP).md",
     "Function Programming Notes - Python.md",
     "AI Agent in Python Project Notes.md",
     "Python Rules (FP).md",
