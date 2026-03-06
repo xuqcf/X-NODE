@@ -40,7 +40,7 @@
 - [x] **Standing Overhead Press:** 3 x 8 (Strength)
 - [x] **Dips (Chest version):** 3 x Max reps
 - [x] **Lateral Raises (Cable):** 4 x 15 (Constant tension)
-- [ ] **Pushups:** 3 x 20 (Burnout)
+- [x] **Pushups:** 3 x 20 (Burnout)
 - [ ] **Tricep Rope Pushdowns:** 3 x 12 (Focus on squeeze)
 - [ ] **Stamina:** 10m Treadmill (Incline 10.0 / Speed 3.5)
 
