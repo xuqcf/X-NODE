@@ -71,7 +71,7 @@
 - [x] **Leg Press:** 3 x 12 (Feet low on plate)
 - [x] **Leg Extensions (sissy squats):** 4 x 15
 - [x] **Seated Calf Raises(with dumbbells ):** 4 x 20
-- [ ] **Stamina:** 5m Stairmaster (Slow/Deep steps)
+- [x] **Stamina:** 5m Stairmaster (Slow/Deep steps)
 
 **Sunday (Hamstrings/Posterior Focus)**
 - [ ] **Romanian Deadlifts:** 3 x 10 (Slow eccentric)
