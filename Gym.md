@@ -100,8 +100,8 @@
 | **WEEK 1** | **PRIMING** | *Focus: Form*       |                  |          |     |             |         |         | *Leave 2 reps in tank*     |
 | Mar 2      | Mon         | Push A              |                  |          | [ ] |     [ ]     |   [ ]   |   [ ]   | Day 1 - Take it easy       |
 | Mar 3      | Tue         | Pull A              |                  |   [ ]    | [ ] |     [ ]     |   [ ]   |   [ ]   |                            |
-| Mar 4      | Wed         | Legs A              |                  |   [ ]    | [ ] |     [ ]     |   [ ]   |   [ ]   |                            |
-| Mar 5      | Thu         | Push B              |                  |    Y     | [ ] |     [ ]     |    Y    |    Y    |                            |
+| Mar 4      | Wed         | Legs A              |                  |    Y     | [ ] |     6.6     |    Y    |    Y    |                            |
+| Mar 5      | Thu         | Push B              |                  |    Y     | [ ] |     6.5     |    Y    |    Y    |                            |
 | Mar 6      | Fri         | Pull B              |                  |   [ ]    | [ ] |     [ ]     |   [ ]   |   [ ]   |                            |
 | Mar 7      | Sat         | **REST**            | --               |   [ ]    | [ ] |     [ ]     |   [ ]   |   --    | Focus on stretching        |
 | Mar 8      | Sun         | Legs B              |                  |   [ ]    | [ ] |     [ ]     |   [ ]   |   [ ]   |                            |
