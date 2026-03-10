@@ -32,7 +32,7 @@
 - [x] **Flat Bench Press:** 3 x 6-8 (Heavy Strength)
 - [x] **Incline DB Press:** 3 x 10-12 (Upper Chest)
 - [x] **Cable Flys:** 3 x 15 (Chest Pump)
-- [ ] **DB Lateral Raises:** 4 x 15 (Side Delts)
+- [x] **DB Lateral Raises:** 4 x 15 (Side Delts)
 - [ ] **Tricep Overhead Extension:** 3 x 12
 - [ ] **Stamina:** 10m Treadmill (Incline 8.0 / Speed 4.0)
 
