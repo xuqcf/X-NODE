@@ -29,7 +29,7 @@
 
 ### 🔴 PUSH (Mon / Thu)
 **Monday (Chest Priority)**
-- [ ] **Flat Bench Press:** 3 x 6-8 (Heavy Strength)
+- [x] **Flat Bench Press:** 3 x 6-8 (Heavy Strength)
 - [ ] **Incline DB Press:** 3 x 10-12 (Upper Chest)
 - [ ] **Cable Flys:** 3 x 15 (Chest Pump)
 - [ ] **DB Lateral Raises:** 4 x 15 (Side Delts)
