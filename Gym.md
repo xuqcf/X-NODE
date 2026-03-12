@@ -49,7 +49,7 @@
 ### 🔵 PULL (Tue / Fri)
 **Tuesday (Width - V-Taper Focus)**
 - [x] **Lat Pulldowns:** 4 x 8-10 (Wide grip)
-- [ ] **Single Arm DB Row:** 3 x 10 (Per arm)
+- [x] **Single Arm DB Row:** 3 x 10 (Per arm)
 - [ ] **Straight Arm Pulldowns:** 3 x 15 (Lats isolation)
 - [ ] **Face Pulls:** 3 x 20 (Rear delts)
 - [ ] **Incline DB Curls:** 3 x 12 (Full stretch)
