@@ -101,12 +101,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gym.md",
+                "file": "Arch Linux Commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gym"
+              "title": "Arch Linux Commands"
             }
           }
         ],
@@ -123,13 +123,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Gym.md",
+                "file": "Arch Linux Commands.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Gym"
+              "title": "Outline of Arch Linux Commands"
             }
           }
         ]
@@ -307,15 +307,15 @@
   },
   "active": "f1f69674702990fc",
   "lastOpenFiles": [
+    "Function Programming Notes - Python.md",
+    "Gym.md",
     "Arch Linux Commands.md",
     "AI Agent in Python Project Notes.md",
-    "Function Programming Notes - Python.md",
     "AI Agent in Python Project Notes - SIMPLIFIED.md",
     "Useful Python Rules (OOP).md",
     "Untitled.canvas",
     "README.md",
     "Python Rules (FP).md",
-    "Gym.md",
     "Testing.md",
     "Untitled.base",
     "Untitled 1.base",
