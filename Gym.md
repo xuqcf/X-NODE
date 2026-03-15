@@ -58,7 +58,7 @@
 **Friday (Thickness - Back Density)**
 - [x] **Barbell Rows:** 3 x 8 (Underhand grip)
 - [x] **Close-Grip Pulldowns:** 3 x 10-12
-- [ ] **Dumbbell Shrugs:** 3 x 12 (Traps)
+- [x] **Dumbbell Shrugs:** 3 x 12 (Traps)
 - [ ] **Rear Delt Flys:** 3 x 15
 - [ ] **Hammer Curls:** 3 x 10 (Thick forearms)
 - [ ] **Stamina:** 10m Rowing Machine (30s fast / 30s slow)
